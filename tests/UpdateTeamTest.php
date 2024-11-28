@@ -5,11 +5,11 @@ namespace HichemTabTech\JetstreamRise\Tests;
 use App\Actions\Jetstream\CreateTeam;
 use App\Actions\Jetstream\UpdateTeamName;
 use App\Models\Team;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Validation\ValidationException;
 use HichemTabTech\JetstreamRise\Jetstream;
 use HichemTabTech\JetstreamRise\Tests\Fixtures\TeamPolicy;
 use HichemTabTech\JetstreamRise\Tests\Fixtures\User;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Validation\ValidationException;
 
 class UpdateTeamTest extends OrchestraTestCase
 {

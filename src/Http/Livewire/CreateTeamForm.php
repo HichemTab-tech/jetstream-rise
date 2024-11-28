@@ -2,9 +2,9 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Livewire;
 
-use Illuminate\Support\Facades\Auth;
 use HichemTabTech\JetstreamRise\Contracts\CreatesTeams;
 use HichemTabTech\JetstreamRise\RedirectsActions;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class CreateTeamForm extends Component
@@ -21,7 +21,6 @@ class CreateTeamForm extends Component
     /**
      * Create a new team.
      *
-     * @param  \HichemTabTech\JetstreamRise\Contracts\CreatesTeams  $creator
      * @return mixed
      */
     public function createTeam(CreatesTeams $creator)

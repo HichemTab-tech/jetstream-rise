@@ -1,10 +1,10 @@
 <?php
 
 use App\Models\User;
-use Illuminate\Support\Facades\Mail;
 use HichemTabTech\JetstreamRise\Features;
 use HichemTabTech\JetstreamRise\Http\Livewire\TeamMemberManager;
 use HichemTabTech\JetstreamRise\Mail\TeamInvitation;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Livewire;
 
 test('team members can be invited to team', function () {

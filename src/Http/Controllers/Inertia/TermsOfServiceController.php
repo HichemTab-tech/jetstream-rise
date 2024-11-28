@@ -2,18 +2,17 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Controllers\Inertia;
 
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
 use Inertia\Inertia;
-use HichemTabTech\JetstreamRise\Jetstream;
 
 class TermsOfServiceController extends Controller
 {
     /**
      * Show the terms of service for the application.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Inertia\Response
      */
     public function show(Request $request)

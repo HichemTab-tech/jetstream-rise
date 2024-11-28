@@ -4,18 +4,16 @@ namespace App\Actions\Jetstream;
 
 use App\Models\Team;
 use App\Models\User;
-use Illuminate\Support\Facades\DB;
 use HichemTabTech\JetstreamRise\Contracts\DeletesTeams;
 use HichemTabTech\JetstreamRise\Contracts\DeletesUsers;
+use Illuminate\Support\Facades\DB;
 
 class DeleteUser implements DeletesUsers
 {
     /**
      * Create a new action instance.
      */
-    public function __construct(protected DeletesTeams $deletesTeams)
-    {
-    }
+    public function __construct(protected DeletesTeams $deletesTeams) {}
 
     /**
      * Delete the given user.

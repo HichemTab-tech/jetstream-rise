@@ -3,12 +3,12 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use HichemTabTech\JetstreamRise\HasProfilePhoto;
+use HichemTabTech\JetstreamRise\HasTeams;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
-use HichemTabTech\JetstreamRise\HasProfilePhoto;
-use HichemTabTech\JetstreamRise\HasTeams;
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable

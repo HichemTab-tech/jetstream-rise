@@ -2,8 +2,8 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Livewire;
 
-use Illuminate\Support\Facades\Auth;
 use HichemTabTech\JetstreamRise\Contracts\UpdatesTeamNames;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class UpdateTeamNameForm extends Component
@@ -38,7 +38,6 @@ class UpdateTeamNameForm extends Component
     /**
      * Update the team's name.
      *
-     * @param  \HichemTabTech\JetstreamRise\Contracts\UpdatesTeamNames  $updater
      * @return void
      */
     public function updateTeamName(UpdatesTeamNames $updater)

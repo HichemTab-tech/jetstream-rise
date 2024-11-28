@@ -2,13 +2,13 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Controllers\Inertia;
 
+use HichemTabTech\JetstreamRise\Agent;
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Laravel\Fortify\Features;
-use HichemTabTech\JetstreamRise\Agent;
-use HichemTabTech\JetstreamRise\Jetstream;
 
 class UserProfileController extends Controller
 {
@@ -17,7 +17,6 @@ class UserProfileController extends Controller
     /**
      * Show the general profile settings screen.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Inertia\Response
      */
     public function show(Request $request)
@@ -33,7 +32,6 @@ class UserProfileController extends Controller
     /**
      * Get the current sessions.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Support\Collection
      */
     public function sessions(Request $request)
@@ -44,9 +42,9 @@ class UserProfileController extends Controller
 
         return collect(
             DB::connection(config('session.connection'))->table(config('session.table', 'sessions'))
-                    ->where('user_id', $request->user()->getAuthIdentifier())
-                    ->orderBy('last_activity', 'desc')
-                    ->get()
+                ->where('user_id', $request->user()->getAuthIdentifier())
+                ->orderBy('last_activity', 'desc')
+                ->get()
         )->map(function ($session) use ($request) {
             $agent = $this->createAgent($session);
 
@@ -71,6 +69,6 @@ class UserProfileController extends Controller
      */
     protected function createAgent($session)
     {
-        return tap(new Agent(), fn ($agent) => $agent->setUserAgent($session->user_agent));
+        return tap(new Agent, fn ($agent) => $agent->setUserAgent($session->user_agent));
     }
 }

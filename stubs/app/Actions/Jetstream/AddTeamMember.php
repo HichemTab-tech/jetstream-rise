@@ -5,13 +5,13 @@ namespace App\Actions\Jetstream;
 use App\Models\Team;
 use App\Models\User;
 use Closure;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Support\Facades\Validator;
 use HichemTabTech\JetstreamRise\Contracts\AddsTeamMembers;
 use HichemTabTech\JetstreamRise\Events\AddingTeamMember;
 use HichemTabTech\JetstreamRise\Events\TeamMemberAdded;
 use HichemTabTech\JetstreamRise\Jetstream;
 use HichemTabTech\JetstreamRise\Rules\Role;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Validator;
 
 class AddTeamMember implements AddsTeamMembers
 {

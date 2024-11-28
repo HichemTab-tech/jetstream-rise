@@ -4,11 +4,11 @@ namespace App\Actions\Fortify;
 
 use App\Models\Team;
 use App\Models\User;
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
-use HichemTabTech\JetstreamRise\Jetstream;
 
 class CreateNewUser implements CreatesNewUsers
 {

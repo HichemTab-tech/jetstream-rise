@@ -2,12 +2,12 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Livewire;
 
+use HichemTabTech\JetstreamRise\Contracts\DeletesUsers;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
-use HichemTabTech\JetstreamRise\Contracts\DeletesUsers;
 use Livewire\Component;
 
 class DeleteUserForm extends Component
@@ -45,9 +45,6 @@ class DeleteUserForm extends Component
     /**
      * Delete the current user.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \HichemTabTech\JetstreamRise\Contracts\DeletesUsers  $deleter
-     * @param  \Illuminate\Contracts\Auth\StatefulGuard  $auth
      * @return \Illuminate\Routing\Redirector|\Illuminate\Http\RedirectResponse
      */
     public function deleteUser(Request $request, DeletesUsers $deleter, StatefulGuard $auth)

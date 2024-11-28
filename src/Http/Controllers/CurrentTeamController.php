@@ -2,16 +2,15 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Controllers;
 
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use HichemTabTech\JetstreamRise\Jetstream;
 
 class CurrentTeamController extends Controller
 {
     /**
      * Update the authenticated user's current team.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request)

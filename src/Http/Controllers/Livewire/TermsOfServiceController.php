@@ -2,17 +2,16 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Controllers\Livewire;
 
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
-use HichemTabTech\JetstreamRise\Jetstream;
 
 class TermsOfServiceController extends Controller
 {
     /**
      * Show the terms of service for the application.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\View\View
      */
     public function show(Request $request)

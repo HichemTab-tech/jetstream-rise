@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use HichemTabTech\JetstreamRise\Jetstream;
 use HichemTabTech\JetstreamRise\TeamInvitation as JetstreamTeamInvitation;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class TeamInvitation extends JetstreamTeamInvitation
 {

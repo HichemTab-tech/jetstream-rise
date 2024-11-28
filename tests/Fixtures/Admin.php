@@ -2,8 +2,8 @@
 
 namespace HichemTabTech\JetstreamRise\Tests\Fixtures;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use HichemTabTech\JetstreamRise\HasProfilePhoto;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Sanctum\HasApiTokens;
 
 class Admin extends Authenticatable

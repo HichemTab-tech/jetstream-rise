@@ -2,10 +2,10 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Livewire;
 
-use Illuminate\Support\Facades\Auth;
 use HichemTabTech\JetstreamRise\Actions\ValidateTeamDeletion;
 use HichemTabTech\JetstreamRise\Contracts\DeletesTeams;
 use HichemTabTech\JetstreamRise\RedirectsActions;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class DeleteTeamForm extends Component
@@ -40,8 +40,6 @@ class DeleteTeamForm extends Component
     /**
      * Delete the team.
      *
-     * @param  \HichemTabTech\JetstreamRise\Actions\ValidateTeamDeletion  $validator
-     * @param  \HichemTabTech\JetstreamRise\Contracts\DeletesTeams  $deleter
      * @return mixed
      */
     public function deleteTeam(ValidateTeamDeletion $validator, DeletesTeams $deleter)

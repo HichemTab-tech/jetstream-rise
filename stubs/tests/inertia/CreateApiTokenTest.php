@@ -3,8 +3,8 @@
 namespace Tests\Feature;
 
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use HichemTabTech\JetstreamRise\Features;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class CreateApiTokenTest extends TestCase

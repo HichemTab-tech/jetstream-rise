@@ -2,11 +2,11 @@
 
 namespace HichemTabTech\JetstreamRise\Mail;
 
+use HichemTabTech\JetstreamRise\TeamInvitation as TeamInvitationModel;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\URL;
-use HichemTabTech\JetstreamRise\TeamInvitation as TeamInvitationModel;
 
 class TeamInvitation extends Mailable
 {
@@ -22,7 +22,6 @@ class TeamInvitation extends Mailable
     /**
      * Create a new message instance.
      *
-     * @param  \HichemTabTech\JetstreamRise\TeamInvitation  $invitation
      * @return void
      */
     public function __construct(TeamInvitationModel $invitation)

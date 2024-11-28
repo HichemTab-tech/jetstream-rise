@@ -4,10 +4,10 @@ namespace Database\Factories;
 
 use App\Models\Team;
 use App\Models\User;
+use HichemTabTech\JetstreamRise\Features;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
-use HichemTabTech\JetstreamRise\Features;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>

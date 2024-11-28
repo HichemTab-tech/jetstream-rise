@@ -3,8 +3,8 @@
 namespace Tests\Feature;
 
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use HichemTabTech\JetstreamRise\Http\Livewire\TeamMemberManager;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
 use Tests\TestCase;
 

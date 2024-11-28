@@ -2,11 +2,8 @@
 
 namespace HichemTabTech\JetstreamRise\Tests;
 
-use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
-use Laravel\Fortify\FortifyServiceProvider;
 use HichemTabTech\JetstreamRise\Features;
-use HichemTabTech\JetstreamRise\JetstreamServiceProvider;
-use Livewire\LivewireServiceProvider;
+use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
 use Orchestra\Testbench\Concerns\WithWorkbench;
 use Orchestra\Testbench\TestCase;
 

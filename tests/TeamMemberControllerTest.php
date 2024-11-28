@@ -4,10 +4,10 @@ namespace HichemTabTech\JetstreamRise\Tests;
 
 use App\Actions\Jetstream\CreateTeam;
 use App\Models\Team;
-use Illuminate\Support\Facades\Gate;
 use HichemTabTech\JetstreamRise\Jetstream;
 use HichemTabTech\JetstreamRise\Tests\Fixtures\TeamPolicy;
 use HichemTabTech\JetstreamRise\Tests\Fixtures\User;
+use Illuminate\Support\Facades\Gate;
 use Laravel\Sanctum\TransientToken;
 
 class TeamMemberControllerTest extends OrchestraTestCase

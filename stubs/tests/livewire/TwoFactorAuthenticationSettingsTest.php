@@ -3,9 +3,9 @@
 namespace Tests\Feature;
 
 use App\Models\User;
+use HichemTabTech\JetstreamRise\Http\Livewire\TwoFactorAuthenticationForm;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Laravel\Fortify\Features;
-use HichemTabTech\JetstreamRise\Http\Livewire\TwoFactorAuthenticationForm;
 use Livewire\Livewire;
 use Tests\TestCase;
 

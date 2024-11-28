@@ -1,8 +1,8 @@
 <?php
 
 use App\Models\User;
-use Laravel\Fortify\Features;
 use HichemTabTech\JetstreamRise\Http\Livewire\TwoFactorAuthenticationForm;
+use Laravel\Fortify\Features;
 use Livewire\Livewire;
 
 test('two factor authentication can be enabled', function () {

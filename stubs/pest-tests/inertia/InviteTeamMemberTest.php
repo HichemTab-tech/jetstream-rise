@@ -1,9 +1,9 @@
 <?php
 
 use App\Models\User;
-use Illuminate\Support\Facades\Mail;
 use HichemTabTech\JetstreamRise\Features;
 use HichemTabTech\JetstreamRise\Mail\TeamInvitation;
+use Illuminate\Support\Facades\Mail;
 
 test('team members can be invited to team', function () {
     Mail::fake();

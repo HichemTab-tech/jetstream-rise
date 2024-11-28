@@ -3,10 +3,10 @@
 namespace Tests\Feature;
 
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Str;
 use HichemTabTech\JetstreamRise\Features;
 use HichemTabTech\JetstreamRise\Http\Livewire\ApiTokenManager;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Str;
 use Livewire\Livewire;
 use Tests\TestCase;
 

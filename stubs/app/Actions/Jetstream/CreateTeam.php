@@ -4,11 +4,11 @@ namespace App\Actions\Jetstream;
 
 use App\Models\Team;
 use App\Models\User;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Support\Facades\Validator;
 use HichemTabTech\JetstreamRise\Contracts\CreatesTeams;
 use HichemTabTech\JetstreamRise\Events\AddingTeam;
 use HichemTabTech\JetstreamRise\Jetstream;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Validator;
 
 class CreateTeam implements CreatesTeams
 {

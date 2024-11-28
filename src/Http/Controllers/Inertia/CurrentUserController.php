@@ -2,21 +2,19 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Controllers\Inertia;
 
+use HichemTabTech\JetstreamRise\Contracts\DeletesUsers;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Validation\ValidationException;
 use Inertia\Inertia;
 use Laravel\Fortify\Actions\ConfirmPassword;
-use HichemTabTech\JetstreamRise\Contracts\DeletesUsers;
 
 class CurrentUserController extends Controller
 {
     /**
      * Delete the current user.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Illuminate\Contracts\Auth\StatefulGuard  $guard
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, StatefulGuard $guard)

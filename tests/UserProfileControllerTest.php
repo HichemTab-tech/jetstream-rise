@@ -2,10 +2,10 @@
 
 namespace HichemTabTech\JetstreamRise\Tests;
 
-use Laravel\Fortify\Actions\DisableTwoFactorAuthentication;
-use Laravel\Fortify\Features;
 use HichemTabTech\JetstreamRise\Jetstream;
 use HichemTabTech\JetstreamRise\Tests\Fixtures\User;
+use Laravel\Fortify\Actions\DisableTwoFactorAuthentication;
+use Laravel\Fortify\Features;
 use Mockery as m;
 
 class UserProfileControllerTest extends OrchestraTestCase
@@ -69,8 +69,8 @@ class UserProfileControllerTest extends OrchestraTestCase
         ]);
 
         $response = $this->actingAs($user)
-                        ->withSession(['two_factor_empty_at' => time()])
-                        ->get('/user/profile');
+            ->withSession(['two_factor_empty_at' => time()])
+            ->get('/user/profile');
 
         $response->assertStatus(200);
     }
@@ -91,11 +91,11 @@ class UserProfileControllerTest extends OrchestraTestCase
         ]);
 
         $response = $this->actingAs($user)
-                        ->withSession([
-                            'two_factor_empty_at' => time(),
-                            'two_factor_confirming_at' => time() - 10,
-                        ])
-                        ->get('/user/profile');
+            ->withSession([
+                'two_factor_empty_at' => time(),
+                'two_factor_confirming_at' => time() - 10,
+            ])
+            ->get('/user/profile');
 
         $response->assertStatus(200);
     }

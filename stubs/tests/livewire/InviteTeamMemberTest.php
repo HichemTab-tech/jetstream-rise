@@ -3,11 +3,11 @@
 namespace Tests\Feature;
 
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Mail;
 use HichemTabTech\JetstreamRise\Features;
 use HichemTabTech\JetstreamRise\Http\Livewire\TeamMemberManager;
 use HichemTabTech\JetstreamRise\Mail\TeamInvitation;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Livewire;
 use Tests\TestCase;
 

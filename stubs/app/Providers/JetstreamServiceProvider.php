@@ -3,9 +3,9 @@
 namespace App\Providers;
 
 use App\Actions\Jetstream\DeleteUser;
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
-use HichemTabTech\JetstreamRise\Jetstream;
 
 class JetstreamServiceProvider extends ServiceProvider
 {

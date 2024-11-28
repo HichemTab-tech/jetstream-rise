@@ -2,8 +2,8 @@
 
 namespace HichemTabTech\JetstreamRise\Rules;
 
-use Illuminate\Contracts\Validation\Rule;
 use HichemTabTech\JetstreamRise\Jetstream;
+use Illuminate\Contracts\Validation\Rule;
 
 class Role implements Rule
 {

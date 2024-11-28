@@ -1,9 +1,9 @@
 <?php
 
 use App\Models\User;
-use Illuminate\Support\Str;
 use HichemTabTech\JetstreamRise\Features;
 use HichemTabTech\JetstreamRise\Http\Livewire\ApiTokenManager;
+use Illuminate\Support\Str;
 use Livewire\Livewire;
 
 test('api token permissions can be updated', function () {

@@ -2,9 +2,9 @@
 
 namespace Tests\Feature;
 
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Laravel\Fortify\Features;
-use HichemTabTech\JetstreamRise\Jetstream;
 use Tests\TestCase;
 
 class RegistrationTest extends TestCase
