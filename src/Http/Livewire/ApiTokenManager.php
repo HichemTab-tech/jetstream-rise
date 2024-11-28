@@ -2,9 +2,9 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Livewire;
 
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
-use HichemTabTech\JetstreamRise\Jetstream;
 use Livewire\Component;
 
 class ApiTokenManager extends Component

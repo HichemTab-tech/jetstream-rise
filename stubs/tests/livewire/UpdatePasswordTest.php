@@ -3,9 +3,9 @@
 namespace Tests\Feature;
 
 use App\Models\User;
+use HichemTabTech\JetstreamRise\Http\Livewire\UpdatePasswordForm;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Hash;
-use HichemTabTech\JetstreamRise\Http\Livewire\UpdatePasswordForm;
 use Livewire\Livewire;
 use Tests\TestCase;
 

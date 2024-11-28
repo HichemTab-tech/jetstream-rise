@@ -5,16 +5,16 @@ namespace App\Actions\Jetstream;
 use App\Models\Team;
 use App\Models\User;
 use Closure;
-use Illuminate\Database\Query\Builder;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Validation\Rule;
 use HichemTabTech\JetstreamRise\Contracts\InvitesTeamMembers;
 use HichemTabTech\JetstreamRise\Events\InvitingTeamMember;
 use HichemTabTech\JetstreamRise\Jetstream;
 use HichemTabTech\JetstreamRise\Mail\TeamInvitation;
 use HichemTabTech\JetstreamRise\Rules\Role;
+use Illuminate\Database\Query\Builder;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 
 class InviteTeamMember implements InvitesTeamMembers
 {

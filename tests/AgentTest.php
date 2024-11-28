@@ -17,9 +17,9 @@ class AgentTest extends TestCase
      * @return void
      */
     #[DataProvider('operatingSystemsDataProvider')]
-    public function testOperatingSystems($userAgent, $platform)
+    public function test_operating_systems($userAgent, $platform)
     {
-        $agent = new Agent();
+        $agent = new Agent;
         $agent->setUserAgent($userAgent);
 
         $this->assertSame($platform, $agent->platform());
@@ -46,9 +46,9 @@ class AgentTest extends TestCase
      * @return void
      */
     #[DataProvider('browsersDataProvider')]
-    public function testBrowsers($userAgent, $browser)
+    public function test_browsers($userAgent, $browser)
     {
-        $agent = new Agent();
+        $agent = new Agent;
         $agent->setUserAgent($userAgent);
 
         $this->assertSame($browser, $agent->browser());
@@ -82,9 +82,9 @@ class AgentTest extends TestCase
      * @return void
      */
     #[DataProvider('devicesDataProvider')]
-    public function testDesktopDevices($userAgent, $expected)
+    public function test_desktop_devices($userAgent, $expected)
     {
-        $agent = new Agent();
+        $agent = new Agent;
         $agent->setUserAgent($userAgent);
 
         $this->assertSame($expected, $agent->isDesktop());

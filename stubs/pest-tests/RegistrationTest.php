@@ -1,7 +1,7 @@
 <?php
 
-use Laravel\Fortify\Features;
 use HichemTabTech\JetstreamRise\Jetstream;
+use Laravel\Fortify\Features;
 
 test('registration screen can be rendered', function () {
     $response = $this->get('/register');

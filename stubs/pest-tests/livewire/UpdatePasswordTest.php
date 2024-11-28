@@ -1,8 +1,8 @@
 <?php
 
 use App\Models\User;
-use Illuminate\Support\Facades\Hash;
 use HichemTabTech\JetstreamRise\Http\Livewire\UpdatePasswordForm;
+use Illuminate\Support\Facades\Hash;
 use Livewire\Livewire;
 
 test('password can be updated', function () {

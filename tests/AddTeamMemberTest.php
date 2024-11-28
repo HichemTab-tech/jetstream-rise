@@ -5,13 +5,13 @@ namespace HichemTabTech\JetstreamRise\Tests;
 use App\Actions\Jetstream\AddTeamMember;
 use App\Actions\Jetstream\CreateTeam;
 use App\Models\Team;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Validation\ValidationException;
 use HichemTabTech\JetstreamRise\Jetstream;
 use HichemTabTech\JetstreamRise\Membership;
 use HichemTabTech\JetstreamRise\Tests\Fixtures\TeamPolicy;
 use HichemTabTech\JetstreamRise\Tests\Fixtures\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Validation\ValidationException;
 use Laravel\Sanctum\TransientToken;
 
 class AddTeamMemberTest extends OrchestraTestCase

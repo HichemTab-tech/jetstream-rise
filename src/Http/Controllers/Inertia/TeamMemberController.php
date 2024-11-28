@@ -2,21 +2,20 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Controllers\Inertia;
 
-use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
 use HichemTabTech\JetstreamRise\Actions\UpdateTeamMemberRole;
 use HichemTabTech\JetstreamRise\Contracts\AddsTeamMembers;
 use HichemTabTech\JetstreamRise\Contracts\InvitesTeamMembers;
 use HichemTabTech\JetstreamRise\Contracts\RemovesTeamMembers;
 use HichemTabTech\JetstreamRise\Features;
 use HichemTabTech\JetstreamRise\Jetstream;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class TeamMemberController extends Controller
 {
     /**
      * Add a new team member to a team.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @param  int  $teamId
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -46,7 +45,6 @@ class TeamMemberController extends Controller
     /**
      * Update the given team member's role.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @param  int  $teamId
      * @param  int  $userId
      * @return \Illuminate\Http\RedirectResponse
@@ -66,7 +64,6 @@ class TeamMemberController extends Controller
     /**
      * Remove the given user from the given team.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @param  int  $teamId
      * @param  int  $userId
      * @return \Illuminate\Http\RedirectResponse

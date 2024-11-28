@@ -3,9 +3,9 @@
 namespace Tests\Feature;
 
 use App\Models\User;
+use HichemTabTech\JetstreamRise\Features;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
-use HichemTabTech\JetstreamRise\Features;
 use Tests\TestCase;
 
 class DeleteApiTokenTest extends TestCase

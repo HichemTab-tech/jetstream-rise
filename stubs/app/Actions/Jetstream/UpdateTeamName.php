@@ -4,9 +4,9 @@ namespace App\Actions\Jetstream;
 
 use App\Models\Team;
 use App\Models\User;
+use HichemTabTech\JetstreamRise\Contracts\UpdatesTeamNames;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Validator;
-use HichemTabTech\JetstreamRise\Contracts\UpdatesTeamNames;
 
 class UpdateTeamName implements UpdatesTeamNames
 {

@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use HichemTabTech\JetstreamRise\Http\Controllers\CurrentTeamController;
 use HichemTabTech\JetstreamRise\Http\Controllers\Inertia\ApiTokenController;
 use HichemTabTech\JetstreamRise\Http\Controllers\Inertia\CurrentUserController;
@@ -13,6 +12,7 @@ use HichemTabTech\JetstreamRise\Http\Controllers\Inertia\TermsOfServiceControlle
 use HichemTabTech\JetstreamRise\Http\Controllers\Inertia\UserProfileController;
 use HichemTabTech\JetstreamRise\Http\Controllers\TeamInvitationController;
 use HichemTabTech\JetstreamRise\Jetstream;
+use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => config('jetstream.middleware', ['web'])], function () {
     if (Jetstream::hasTermsAndPrivacyPolicyFeature()) {

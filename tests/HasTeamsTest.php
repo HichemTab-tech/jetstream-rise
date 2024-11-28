@@ -4,11 +4,11 @@ namespace HichemTabTech\JetstreamRise\Tests;
 
 use App\Models\Team;
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use HichemTabTech\JetstreamRise\Jetstream;
 use HichemTabTech\JetstreamRise\OwnerRole;
 use HichemTabTech\JetstreamRise\Role;
 use HichemTabTech\JetstreamRise\Tests\Fixtures\User as UserFixture;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class HasTeamsTest extends OrchestraTestCase
 {
@@ -24,14 +24,14 @@ class HasTeamsTest extends OrchestraTestCase
         Jetstream::useUserModel(UserFixture::class);
     }
 
-    public function test_teamRole_returns_an_OwnerRole_for_the_team_owner(): void
+    public function test_team_role_returns_an_owner_role_for_the_team_owner(): void
     {
         $team = Team::factory()->create();
 
         $this->assertInstanceOf(OwnerRole::class, $team->owner->teamRole($team));
     }
 
-    public function test_teamRole_returns_the_matching_role(): void
+    public function test_team_role_returns_the_matching_role(): void
     {
         Jetstream::role('admin', 'Admin', [
             'read',
@@ -49,14 +49,14 @@ class HasTeamsTest extends OrchestraTestCase
         $this->assertSame('admin', $role->key);
     }
 
-    public function test_teamRole_returns_null_if_the_user_does_not_belong_to_the_team(): void
+    public function test_team_role_returns_null_if_the_user_does_not_belong_to_the_team(): void
     {
         $team = Team::factory()->create();
 
-        $this->assertNull((new UserFixture())->teamRole($team));
+        $this->assertNull((new UserFixture)->teamRole($team));
     }
 
-    public function test_teamRole_returns_null_if_the_user_does_not_have_a_role_on_the_site(): void
+    public function test_team_role_returns_null_if_the_user_does_not_have_a_role_on_the_site(): void
     {
         $team = Team::factory()
             ->has(User::factory())
@@ -65,21 +65,21 @@ class HasTeamsTest extends OrchestraTestCase
         $this->assertNull($team->users->first()->teamRole($team));
     }
 
-    public function test_teamPermissions_returns_all_for_team_owners(): void
+    public function test_team_permissions_returns_all_for_team_owners(): void
     {
         $team = Team::factory()->create();
 
         $this->assertSame(['*'], $team->owner->teamPermissions($team));
     }
 
-    public function test_teamPermissions_returns_empty_for_non_members(): void
+    public function test_team_permissions_returns_empty_for_non_members(): void
     {
         $team = Team::factory()->create();
 
-        $this->assertSame([], (new UserFixture())->teamPermissions($team));
+        $this->assertSame([], (new UserFixture)->teamPermissions($team));
     }
 
-    public function test_teamPermissions_returns_permissions_for_the_users_role(): void
+    public function test_team_permissions_returns_permissions_for_the_users_role(): void
     {
         Jetstream::role('admin', 'Admin', [
             'read',
@@ -95,7 +95,7 @@ class HasTeamsTest extends OrchestraTestCase
         $this->assertSame(['read', 'create'], $team->users->first()->teamPermissions($team));
     }
 
-    public function test_teamPermissions_returns_empty_permissions_for_members_without_a_defined_role(): void
+    public function test_team_permissions_returns_empty_permissions_for_members_without_a_defined_role(): void
     {
         Jetstream::role('admin', 'Admin', [
             'read',

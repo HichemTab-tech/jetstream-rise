@@ -2,17 +2,16 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Controllers\Livewire;
 
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Gate;
-use HichemTabTech\JetstreamRise\Jetstream;
 
 class TeamController extends Controller
 {
     /**
      * Show the team management screen.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @param  int  $teamId
      * @return \Illuminate\View\View
      */
@@ -33,7 +32,6 @@ class TeamController extends Controller
     /**
      * Show the team creation screen.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\View\View
      */
     public function create(Request $request)

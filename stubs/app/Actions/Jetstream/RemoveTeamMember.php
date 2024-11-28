@@ -4,11 +4,11 @@ namespace App\Actions\Jetstream;
 
 use App\Models\Team;
 use App\Models\User;
+use HichemTabTech\JetstreamRise\Contracts\RemovesTeamMembers;
+use HichemTabTech\JetstreamRise\Events\TeamMemberRemoved;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Validation\ValidationException;
-use HichemTabTech\JetstreamRise\Contracts\RemovesTeamMembers;
-use HichemTabTech\JetstreamRise\Events\TeamMemberRemoved;
 
 class RemoveTeamMember implements RemovesTeamMembers
 {

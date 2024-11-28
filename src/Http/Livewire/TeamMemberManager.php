@@ -2,7 +2,6 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Livewire;
 
-use Illuminate\Support\Facades\Auth;
 use HichemTabTech\JetstreamRise\Actions\UpdateTeamMemberRole;
 use HichemTabTech\JetstreamRise\Contracts\AddsTeamMembers;
 use HichemTabTech\JetstreamRise\Contracts\InvitesTeamMembers;
@@ -10,6 +9,7 @@ use HichemTabTech\JetstreamRise\Contracts\RemovesTeamMembers;
 use HichemTabTech\JetstreamRise\Features;
 use HichemTabTech\JetstreamRise\Jetstream;
 use HichemTabTech\JetstreamRise\Role;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class TeamMemberManager extends Component
@@ -152,7 +152,6 @@ class TeamMemberManager extends Component
     /**
      * Save the role for the user being managed.
      *
-     * @param  \HichemTabTech\JetstreamRise\Actions\UpdateTeamMemberRole  $updater
      * @return void
      */
     public function updateRole(UpdateTeamMemberRole $updater)
@@ -182,7 +181,6 @@ class TeamMemberManager extends Component
     /**
      * Remove the currently authenticated user from the team.
      *
-     * @param  \HichemTabTech\JetstreamRise\Contracts\RemovesTeamMembers  $remover
      * @return \Illuminate\Http\RedirectResponse
      */
     public function leaveTeam(RemovesTeamMembers $remover)
@@ -216,7 +214,6 @@ class TeamMemberManager extends Component
     /**
      * Remove a team member from the team.
      *
-     * @param  \HichemTabTech\JetstreamRise\Contracts\RemovesTeamMembers  $remover
      * @return void
      */
     public function removeTeamMember(RemovesTeamMembers $remover)

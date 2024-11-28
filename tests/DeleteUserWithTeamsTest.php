@@ -6,14 +6,14 @@ use App\Actions\Jetstream\CreateTeam;
 use App\Actions\Jetstream\DeleteTeam;
 use App\Actions\Jetstream\DeleteUser;
 use App\Models\Team;
+use HichemTabTech\JetstreamRise\Jetstream;
+use HichemTabTech\JetstreamRise\Tests\Fixtures\TeamPolicy;
+use HichemTabTech\JetstreamRise\Tests\Fixtures\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
-use HichemTabTech\JetstreamRise\Jetstream;
-use HichemTabTech\JetstreamRise\Tests\Fixtures\TeamPolicy;
-use HichemTabTech\JetstreamRise\Tests\Fixtures\User;
 
 class DeleteUserWithTeamsTest extends OrchestraTestCase
 {

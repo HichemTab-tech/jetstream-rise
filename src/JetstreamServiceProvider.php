@@ -1,19 +1,10 @@
-<?php /** @noinspection PhpMultipleClassDeclarationsInspection */
+<?php
+
+/** @noinspection PhpMultipleClassDeclarationsInspection */
 
 namespace HichemTabTech\JetstreamRise;
 
 use App\Http\Middleware\HandleInertiaRequests;
-use Illuminate\Contracts\Container\BindingResolutionException;
-use Illuminate\Contracts\Http\Kernel;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\ServiceProvider;
-use Inertia\Inertia;
-use Laravel\Fortify\Events\PasswordUpdatedViaController;
-use Laravel\Fortify\Fortify;
 use HichemTabTech\JetstreamRise\Http\Livewire\ApiTokenManager;
 use HichemTabTech\JetstreamRise\Http\Livewire\CreateTeamForm;
 use HichemTabTech\JetstreamRise\Http\Livewire\DeleteTeamForm;
@@ -26,14 +17,23 @@ use HichemTabTech\JetstreamRise\Http\Livewire\UpdatePasswordForm;
 use HichemTabTech\JetstreamRise\Http\Livewire\UpdateProfileInformationForm;
 use HichemTabTech\JetstreamRise\Http\Livewire\UpdateTeamNameForm;
 use HichemTabTech\JetstreamRise\Http\Middleware\ShareInertiaData;
+use Illuminate\Contracts\Container\BindingResolutionException;
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\ServiceProvider;
+use Inertia\Inertia;
+use Laravel\Fortify\Events\PasswordUpdatedViaController;
+use Laravel\Fortify\Fortify;
 use Livewire\Livewire;
 
 class JetstreamServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
-     *
-     * @return void
      */
     public function register(): void
     {
@@ -43,7 +43,6 @@ class JetstreamServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      *
-     * @return void
      * @throws BindingResolutionException
      */
     public function boot(): void
@@ -105,8 +104,6 @@ class JetstreamServiceProvider extends ServiceProvider
 
     /**
      * Configure publishing for the package.
-     *
-     * @return void
      */
     protected function configurePublishing(): void
     {
@@ -142,8 +139,6 @@ class JetstreamServiceProvider extends ServiceProvider
 
     /**
      * Configure the routes offered by the application.
-     *
-     * @return void
      */
     protected function configureRoutes(): void
     {
@@ -160,8 +155,6 @@ class JetstreamServiceProvider extends ServiceProvider
 
     /**
      * Configure the commands offered by the application.
-     *
-     * @return void
      */
     protected function configureCommands(): void
     {
@@ -177,8 +170,8 @@ class JetstreamServiceProvider extends ServiceProvider
     /**
      * Boot any Inertia related services.
      *
-     * @return void
      * @throws BindingResolutionException
+     *
      * @noinspection PhpUnusedParameterInspection
      */
     protected function bootInertia(): void

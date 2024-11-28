@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use HichemTabTech\JetstreamRise\Events\TeamCreated;
 use HichemTabTech\JetstreamRise\Events\TeamDeleted;
 use HichemTabTech\JetstreamRise\Events\TeamUpdated;
 use HichemTabTech\JetstreamRise\Team as JetstreamTeam;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Team extends JetstreamTeam
 {

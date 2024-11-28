@@ -2,11 +2,11 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Middleware;
 
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Session;
 use Inertia\Inertia;
 use Laravel\Fortify\Features;
-use HichemTabTech\JetstreamRise\Jetstream;
 
 class ShareInertiaData
 {

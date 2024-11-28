@@ -3,11 +3,11 @@
 namespace HichemTabTech\JetstreamRise\Tests;
 
 use App\Actions\Jetstream\CreateTeam;
-use Illuminate\Support\Facades\Gate;
 use HichemTabTech\JetstreamRise\Jetstream;
 use HichemTabTech\JetstreamRise\Team;
 use HichemTabTech\JetstreamRise\Tests\Fixtures\TeamPolicy;
 use HichemTabTech\JetstreamRise\Tests\Fixtures\User;
+use Illuminate\Support\Facades\Gate;
 use Laravel\Sanctum\Sanctum;
 use Laravel\Sanctum\TransientToken;
 

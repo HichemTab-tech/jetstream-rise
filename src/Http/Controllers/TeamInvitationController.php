@@ -2,19 +2,18 @@
 
 namespace HichemTabTech\JetstreamRise\Http\Controllers;
 
+use HichemTabTech\JetstreamRise\Contracts\AddsTeamMembers;
+use HichemTabTech\JetstreamRise\Jetstream;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Gate;
-use HichemTabTech\JetstreamRise\Contracts\AddsTeamMembers;
-use HichemTabTech\JetstreamRise\Jetstream;
 
 class TeamInvitationController extends Controller
 {
     /**
      * Accept a team invitation.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @param  int  $invitationId
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -41,7 +40,6 @@ class TeamInvitationController extends Controller
     /**
      * Cancel the given team invitation.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @param  int  $invitationId
      * @return \Illuminate\Http\RedirectResponse
      */
