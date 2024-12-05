@@ -45,7 +45,8 @@
     "autoload-dev": {
         "psr-4": {
             "HichemTabTech\\JetstreamRise\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "App\\": "stubs/app/",
+            "Database\\Factories\\": "database/factories/"
         }
     },
     "scripts": {
