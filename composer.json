@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.2.0",
         "ext-json": "*",
         "illuminate/console": "^11.0",
         "illuminate/support": "^11.0",
